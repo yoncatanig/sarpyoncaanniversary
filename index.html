@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y+S Sürprizi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="winter-bg"></div>
+
+    <div id="winter-bg"></div>
+
+    <div id="scene">
+        <!-- Paths (SVG) -->
+        <svg id="paths-svg">
+            <!-- Paths will be drawn dynamically or defined here -->
+            <path id="path-1" class="path-line" d="" />
+            <path id="path-2" class="path-line" d="" />
+            <path id="path-3" class="path-line" d="" />
+            <path id="path-4" class="path-line" d="" />
+        </svg>
+
+        <!-- Envelope Container -->
+        <div id="envelope-container">
+            <div id="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter">
+                    <!-- The content inside the envelope (the 4 hearts initially hidden inside or behind) -->
+                </div>
+                <!-- Main Heart Button -->
+                <div id="main-heart">
+                    <span>Y+S</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- The 4 Hearts (Hidden initially) -->
+        <div id="hearts-container">
+            <!-- Heart 1 -->
+            <div class="option-heart" data-id="1" id="heart-1">
+                <div class="heart-shape"></div>
+                <span class="heart-number">2022-<br>2023</span>
+                <svg viewBox="0 0 200 200" class="hedgehog-svg-2" xmlns="http://www.w3.org/2000/svg">
+                    <g class="h2-full-hedgehog">
+                        <!-- Far Legs: Darker stroke, thinner width (3) -->
+                        <g transform="translate(125, 132)" opacity="0.8">
+                            <path class="h2-leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <g transform="translate(85, 132)" opacity="0.8">
+                            <path class="h2-leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <!-- Body: Same colors but ensuring shape is clean -->
+                        <path
+                            d="M60,120 Q50,110 60,100 Q55,90 70,85 Q70,70 85,75 Q95,60 110,70 Q125,60 135,75 Q150,75 145,90 Q155,100 145,115 Q150,125 135,130 L65,130 Z"
+                            fill="#8D6E63" />
+                        <path
+                            d="M70,130 C70,130 60,100 100,85 C140,70 165,100 165,115 C165,130 140,135 100,135 C60,135 70,130 70,130"
+                            fill="#EFEBE9" />
+
+                        <!-- Eye: Slightly larger -->
+                        <g class="eye-details">
+                            <circle cx="138" cy="108" r="4" fill="#3E2723" />
+                        </g>
+
+                        <!-- Nose -->
+                        <circle class="h2-nose-tip" cx="165" cy="115" r="5" fill="#3E2723" />
+
+                        <!-- Near Legs: Darker stroke, thinner width (3) -->
+                        <g transform="translate(135, 132)">
+                            <path class="h2-leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <g transform="translate(75, 132)">
+                            <path class="h2-leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Heart 2 -->
+            <div class="option-heart" data-id="2" id="heart-2">
+                <div class="heart-shape"></div>
+                <span class="heart-number">2023-<br>2024</span>
+                <svg viewBox="0 0 200 200" class="hedgehog-svg-2" xmlns="http://www.w3.org/2000/svg">
+                    <g class="h2-full-hedgehog">
+                        <g transform="translate(125, 132)" opacity="0.8">
+                            <path class="h2-leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <g transform="translate(85, 132)" opacity="0.8">
+                            <path class="h2-leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <path
+                            d="M60,120 Q50,110 60,100 Q55,90 70,85 Q70,70 85,75 Q95,60 110,70 Q125,60 135,75 Q150,75 145,90 Q155,100 145,115 Q150,125 135,130 L65,130 Z"
+                            fill="#8D6E63" />
+                        <path
+                            d="M70,130 C70,130 60,100 100,85 C140,70 165,100 165,115 C165,130 140,135 100,135 C60,135 70,130 70,130"
+                            fill="#EFEBE9" />
+                        <g class="eye-details">
+                            <circle cx="138" cy="108" r="4" fill="#3E2723" />
+                        </g>
+                        <circle class="h2-nose-tip" cx="165" cy="115" r="5" fill="#3E2723" />
+                        <g transform="translate(135, 132)">
+                            <path class="h2-leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <g transform="translate(75, 132)">
+                            <path class="h2-leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Heart 3 -->
+            <div class="option-heart" data-id="3" id="heart-3">
+                <div class="heart-shape"></div>
+                <span class="heart-number">2021-<br>2022</span>
+                <svg viewBox="0 0 200 200" class="hedgehog-svg-2" xmlns="http://www.w3.org/2000/svg">
+                    <g class="h2-full-hedgehog">
+                        <g transform="translate(125, 132)" opacity="0.8">
+                            <path class="h2-leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <g transform="translate(85, 132)" opacity="0.8">
+                            <path class="h2-leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <path
+                            d="M60,120 Q50,110 60,100 Q55,90 70,85 Q70,70 85,75 Q95,60 110,70 Q125,60 135,75 Q150,75 145,90 Q155,100 145,115 Q150,125 135,130 L65,130 Z"
+                            fill="#8D6E63" />
+                        <path
+                            d="M70,130 C70,130 60,100 100,85 C140,70 165,100 165,115 C165,130 140,135 100,135 C60,135 70,130 70,130"
+                            fill="#EFEBE9" />
+                        <g class="eye-details">
+                            <circle cx="138" cy="108" r="4" fill="#3E2723" />
+                        </g>
+                        <circle class="h2-nose-tip" cx="165" cy="115" r="5" fill="#3E2723" />
+                        <g transform="translate(135, 132)">
+                            <path class="h2-leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <g transform="translate(75, 132)">
+                            <path class="h2-leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Heart 4 -->
+            <div class="option-heart" data-id="4" id="heart-4">
+                <div class="heart-shape"></div>
+                <span class="heart-number">2024-<br>2025</span>
+                <svg viewBox="0 0 200 200" class="hedgehog-svg-2" xmlns="http://www.w3.org/2000/svg">
+                    <g class="h2-full-hedgehog">
+                        <g transform="translate(125, 132)" opacity="0.8">
+                            <path class="h2-leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <g transform="translate(85, 132)" opacity="0.8">
+                            <path class="h2-leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <path
+                            d="M60,120 Q50,110 60,100 Q55,90 70,85 Q70,70 85,75 Q95,60 110,70 Q125,60 135,75 Q150,75 145,90 Q155,100 145,115 Q150,125 135,130 L65,130 Z"
+                            fill="#8D6E63" />
+                        <path
+                            d="M70,130 C70,130 60,100 100,85 C140,70 165,100 165,115 C165,130 140,135 100,135 C60,135 70,130 70,130"
+                            fill="#EFEBE9" />
+                        <g class="eye-details">
+                            <circle cx="138" cy="108" r="4" fill="#3E2723" />
+                        </g>
+                        <circle class="h2-nose-tip" cx="165" cy="115" r="5" fill="#3E2723" />
+                        <g transform="translate(135, 132)">
+                            <path class="h2-leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                        <g transform="translate(75, 132)">
+                            <path class="h2-leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#5D4037" stroke-width="3"
+                                fill="none" stroke-linecap="round" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Hedgehog Character -->
+        <div id="hedgehog-container">
+            <svg viewBox="0 0 200 200" class="hedgehog-svg" xmlns="http://www.w3.org/2000/svg">
+                <g class="full-hedgehog">
+                    <!-- 1. FAR SIDE LEGS (Rendered First/Behind) -->
+                    <g transform="translate(125, 132)" opacity="0.6">
+                        <path class="leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#8B5E3C" stroke-width="5"
+                            fill="none" stroke-linecap="round" />
+                    </g>
+                    <g transform="translate(85, 132)" opacity="0.6">
+                        <path class="leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#8B5E3C" stroke-width="5"
+                            fill="none" stroke-linecap="round" />
+                    </g>
+
+                    <!-- 2. BODY LAYERS -->
+                    <path
+                        d="M60,120 Q50,110 60,100 Q55,90 70,85 Q70,70 85,75 Q95,60 110,70 Q125,60 135,75 Q150,75 145,90 Q155,100 145,115 Q150,125 135,130 L65,130 Z"
+                        fill="#5D4037" />
+                    <path
+                        d="M70,130 C70,130 60,100 100,85 C140,70 165,100 165,115 C165,130 140,135 100,135 C60,135 70,130 70,130"
+                        fill="#D7CCC8" />
+
+                    <!-- Eye and Eyelashes -->
+                    <g class="eye-details">
+                        <circle cx="138" cy="108" r="3.5" fill="#2D1B13" />
+                        <path d="M135,104 Q134,101 131,102" stroke="#2D1B13" stroke-width="1" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M138,103 Q138,100 137,99" stroke="#2D1B13" stroke-width="1" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M142,105 Q143,102 145,103" stroke="#2D1B13" stroke-width="1" fill="none"
+                            stroke-linecap="round" />
+                    </g>
+
+                    <circle class="nose-tip" cx="165" cy="115" r="4.5" fill="#2D1B13" />
+
+                    <!-- 3. CLOSE SIDE LEGS (Rendered Last/Front) -->
+                    <g transform="translate(135, 132)">
+                        <path class="leg-path-a" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#8B5E3C" stroke-width="5"
+                            fill="none" stroke-linecap="round" />
+                    </g>
+                    <g transform="translate(75, 132)">
+                        <path class="leg-path-b" d="M0,0 L-1,10 Q-1,12 2,12" stroke="#8B5E3C" stroke-width="5"
+                            fill="none" stroke-linecap="round" />
+                    </g>
+
+                    <!-- 4. STRAWBERRY HAT -->
+                    <g class="berry">
+                        <path d="M-10,0 C-10,-15 10,-15 10,0 C10,10 0,15 0,15 C0,15 -10,10 -10,0" fill="#FF5252" />
+                        <circle cx="-3" cy="-2" r="1" fill="#FFD54F" />
+                        <circle cx="3" cy="2" r="1" fill="#FFD54F" />
+                        <circle cx="0" cy="6" r="1" fill="#FFD54F" />
+                        <path d="M-5,-12 Q0,-18 5,-12 M-8,-10 Q0,-15 8,-10" stroke="#4CAF50" stroke-width="3"
+                            fill="none" stroke-linecap="round" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Album Overlay -->
+    <div id="album-overlay" class="hidden">
+        <div class="album-content">
+            <button id="close-album">×</button>
+            <h2>Anılarımız</h2>
+            <div class="photo-grid">
+                <!-- Photos will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
